@@ -547,22 +547,15 @@ export class ColorPickerComponent implements OnInit, OnDestroy, AfterViewInit {
         value = '#' + value;
       }
 
-      let validHex = /^#([a-f0-9]{3}|[a-f0-9]{6})$/gi;
+      let validHex = /^#([a-f0-9]{6})$/gi;
 
       if (this.cpAlphaChannel === 'always') {
-        validHex = /^#([a-f0-9]{3}|[a-f0-9]{6}|[a-f0-9]{8})$/gi;
+        validHex = /^#([a-f0-9]{6}|[a-f0-9]{8})$/gi;
       }
 
       const valid = validHex.test(value);
 
       if (valid) {
-        if (value.length < 5) {
-          value = '#' + value.substring(1)
-            .split('')
-            .map(c => c + c)
-            .join('');
-        }
-
         if (this.cpAlphaChannel === 'forced') {
           value += Math.round(this.hsva.a * 255).toString(16);
         }
