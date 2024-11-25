@@ -1,2 +1,14 @@
-# Nested package.json's are only needed for development.
-**/package.json
+.*
+*.tgz
+
+src/
+config/
+example/
+
+package/
+npm-debug.log
+node_modules/
+
+tslint.json
+tsconfig.json
+stylelint.json
