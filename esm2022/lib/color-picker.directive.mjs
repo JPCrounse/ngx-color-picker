@@ -1,7 +1,7 @@
 import { Directive, Input, Output, EventEmitter, HostListener, Injector } from '@angular/core';
-import { ColorPickerComponent } from './color-picker.component';
+import { ColorPickerComponent } from './color-picker.component.mjs';
 import * as i0 from "@angular/core";
-import * as i1 from "./color-picker.service";
+import * as i1 from "./color-picker.service.mjs";
 // Caretaker note: we have still left the `typeof` condition in order to avoid
 // creating a breaking change for projects that still use the View Engine.
 // The `ngDevMode` is always available when Ivy is enabled.

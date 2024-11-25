@@ -1,12 +1,12 @@
 import { Component, ViewChild, HostListener, ViewEncapsulation, Inject, PLATFORM_ID, } from '@angular/core';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { detectIE, calculateAutoPositioning } from './helpers';
-import { ColorFormats, Cmyk, Hsla, Hsva, Rgba } from './formats';
-import { SliderDimension, SliderPosition } from './helpers';
+import { detectIE, calculateAutoPositioning } from './helpers.mjs';
+import { ColorFormats, Cmyk, Hsla, Hsva, Rgba } from './formats.mjs';
+import { SliderDimension, SliderPosition } from './helpers.mjs';
 import * as i0 from "@angular/core";
-import * as i1 from "./color-picker.service";
+import * as i1 from "./color-picker.service.mjs";
 import * as i2 from "@angular/common";
-import * as i3 from "./helpers";
+import * as i3 from "./helpers.mjs";
 // Do not store that on the class instance since the condition will be run
 // every time the class is created.
 const SUPPORTS_TOUCH = typeof window !== 'undefined' && 'ontouchstart' in window;

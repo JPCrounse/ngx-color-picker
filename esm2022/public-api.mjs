@@ -1,7 +1,7 @@
-export { Cmyk, Hsla, Hsva, Rgba } from './lib/formats';
-export { TextDirective, SliderDirective } from './lib/helpers';
-export { ColorPickerComponent } from './lib/color-picker.component';
-export { ColorPickerDirective } from './lib/color-picker.directive';
-export { ColorPickerModule } from './lib/color-picker.module';
-export { ColorPickerService } from './lib/color-picker.service';
+export { Cmyk, Hsla, Hsva, Rgba } from './lib/formats.mjs';
+export { TextDirective, SliderDirective } from './lib/helpers.mjs';
+export { ColorPickerComponent } from './lib/color-picker.component.mjs';
+export { ColorPickerDirective } from './lib/color-picker.directive.mjs';
+export { ColorPickerModule } from './lib/color-picker.module.mjs';
+export { ColorPickerService } from './lib/color-picker.service.mjs';
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL2xpYi9zcmMvcHVibGljLWFwaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsSUFBSSxFQUFFLElBQUksRUFBRSxJQUFJLEVBQUUsSUFBSSxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBQ3ZELE9BQU8sRUFBeUMsYUFBYSxFQUFFLGVBQWUsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUV0RyxPQUFPLEVBQUUsb0JBQW9CLEVBQUUsTUFBTSw4QkFBOEIsQ0FBQztBQUNwRSxPQUFPLEVBQUUsb0JBQW9CLEVBQUUsTUFBTSw4QkFBOEIsQ0FBQztBQUVwRSxPQUFPLEVBQUUsaUJBQWlCLEVBQUUsTUFBTSwyQkFBMkIsQ0FBQztBQUU5RCxPQUFPLEVBQUUsa0JBQWtCLEVBQUUsTUFBTSw0QkFBNEIsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCB7IENteWssIEhzbGEsIEhzdmEsIFJnYmEgfSBmcm9tICcuL2xpYi9mb3JtYXRzJztcclxuZXhwb3J0IHsgQWxwaGFDaGFubmVsLCBDb2xvck1vZGUsIE91dHB1dEZvcm1hdCwgVGV4dERpcmVjdGl2ZSwgU2xpZGVyRGlyZWN0aXZlIH0gZnJvbSAnLi9saWIvaGVscGVycyc7XHJcblxyXG5leHBvcnQgeyBDb2xvclBpY2tlckNvbXBvbmVudCB9IGZyb20gJy4vbGliL2NvbG9yLXBpY2tlci5jb21wb25lbnQnO1xyXG5leHBvcnQgeyBDb2xvclBpY2tlckRpcmVjdGl2ZSB9IGZyb20gJy4vbGliL2NvbG9yLXBpY2tlci5kaXJlY3RpdmUnO1xyXG5cclxuZXhwb3J0IHsgQ29sb3JQaWNrZXJNb2R1bGUgfSBmcm9tICcuL2xpYi9jb2xvci1waWNrZXIubW9kdWxlJztcclxuXHJcbmV4cG9ydCB7IENvbG9yUGlja2VyU2VydmljZSB9IGZyb20gJy4vbGliL2NvbG9yLXBpY2tlci5zZXJ2aWNlJztcclxuIl19
