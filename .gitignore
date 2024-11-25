@@ -1,4 +1,5 @@
 bundles/
+dist/
 
 package/
 npm-debug.log
