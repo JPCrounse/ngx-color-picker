@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TextDirective, SliderDirective } from './helpers.mjs';
-import { ColorPickerComponent } from './color-picker.component.mjs';
-import { ColorPickerDirective } from './color-picker.directive.mjs';
-import './ng-dev-mode.mjs';
+import { TextDirective, SliderDirective } from './helpers';
+import { ColorPickerComponent } from './color-picker.component';
+import { ColorPickerDirective } from './color-picker.directive';
+import './ng-dev-mode';
 import * as i0 from "@angular/core";
 export class ColorPickerModule {
     static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.3.11", ngImport: i0, type: ColorPickerModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });

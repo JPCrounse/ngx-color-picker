@@ -1,34 +1,71 @@
 {
-  "license": "MIT",
-  "version": "17.0.0",
   "name": "ngx-color-picker",
   "description": "Color picker widget for Angular",
   "bugs": "https://github.com/zefoy/ngx-color-picker/issues",
+  "version": "17.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "lint": "ng lint",
+    "start": "ng serve app",
+    "build": "ng build lib",
+    "deploy": "deploy-to-git",
+    "prepare": "ng build lib --configuration production",
+    "publish": "npm publish ./dist/lib",
+    "predeploy": "rimraf ./dist/app && mkdirp ./dist/app"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zefoy/ngx-color-picker.git",
-    "directory": "projects/lib"
+    "url": "https://github.com/zefoy/ngx-color-picker.git"
   },
-  "peerDependencies": {
-    "@angular/common": ">=9.0.0",
-    "@angular/core": ">=9.0.0",
-    "@angular/forms": ">=9.0.0"
-  },
-  "module": "fesm2022/ngx-color-picker.mjs",
-  "typings": "index.d.ts",
-  "exports": {
-    "./package.json": {
-      "default": "./package.json"
-    },
-    ".": {
-      "types": "./index.d.ts",
-      "esm2022": "./esm2022/ngx-color-picker.mjs",
-      "esm": "./esm2022/ngx-color-picker.mjs",
-      "default": "./fesm2022/ngx-color-picker.mjs"
+  "config": {
+    "deployToGit": {
+      "repository": "git@github.com:zefoy/ngx-color-picker.git",
+      "branch": "gh-pages",
+      "folder": "dist/app",
+      "script": "ng build app --configuration production --base-href=ngx-color-picker --delete-output-path=false",
+      "commit": "Publishing $npm_package_version",
+      "user": {
+        "name": "ZEF Devel",
+        "email": "devel@zef.fi"
+      }
     }
   },
-  "sideEffects": false,
   "dependencies": {
-    "tslib": "^2.3.0"
+    "@angular/cdk": "^17.3.0",
+    "@angular/common": "^17.3.0",
+    "@angular/compiler": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@angular/forms": "^17.3.0",
+    "@angular/platform-browser": "^17.3.0",
+    "@angular/platform-browser-dynamic": "^17.3.0",
+    "rxjs": "^7.8.0",
+    "tailwindcss": "^3.3.0",
+    "zone.js": "^0.14.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.3.0",
+    "@angular-eslint/builder": "^17.3.0",
+    "@angular-eslint/eslint-plugin": "^17.3.0",
+    "@angular-eslint/eslint-plugin-template": "^17.3.0",
+    "@angular-eslint/schematics": "^17.3.0",
+    "@angular-eslint/template-parser": "^17.3.0",
+    "@angular/cli": "^17.3.0",
+    "@angular/compiler-cli": "^17.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "cpx": "^1.5.0",
+    "deploy-to-git": "^0.4.0",
+    "eslint": "^8.54.0",
+    "mkdirp": "^3.0.0",
+    "ng-packagr": "^17.3.0",
+    "rimraf": "^5.0.0",
+    "stylelint": "^16.6.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-order": "^6.0.0",
+    "terser": "^5.31.0",
+    "typescript": "~5.4.0",
+    "watch": "^1.0.0"
   }
 }

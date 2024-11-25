@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Cmyk, Rgba, Hsla, Hsva } from './formats.mjs';
+import { Cmyk, Rgba, Hsla, Hsva } from './formats';
 import * as i0 from "@angular/core";
 export class ColorPickerService {
     active = null;
