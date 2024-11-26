@@ -211,16 +211,6 @@ export class ColorPickerService {
       });
     }
 
-    stringParsers.push({
-      re: /#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])$/,
-      parse: function(execResult: any) {
-        return new Rgba(parseInt(execResult[1] + execResult[1], 16) / 255,
-          parseInt(execResult[2] + execResult[2], 16) / 255,
-          parseInt(execResult[3] + execResult[3], 16) / 255,
-          1);
-      }
-    });
-
     for (const key in stringParsers) {
       if (stringParsers.hasOwnProperty(key)) {
         const parser = stringParsers[key];

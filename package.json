@@ -2,7 +2,7 @@
   "name": "crounse-color-picker",
   "description": "Color picker widget for Angular",
   "bugs": "https://github.com/jpcrounse/ngx-color-picker/issues",
-  "version": "17.1.0",
+  "version": "17.3.0",
   "license": "MIT",
   "private": true,
   "scripts": {
