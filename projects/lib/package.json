@@ -1,12 +1,12 @@
 {
   "license": "MIT",
-  "version": "17.0.0",
-  "name": "ngx-color-picker",
+  "version": "17.3.0",
+  "name": "crounse-color-picker",
   "description": "Color picker widget for Angular",
-  "bugs": "https://github.com/zefoy/ngx-color-picker/issues",
+  "bugs": "https://github.com/jpcrounse/ngx-color-picker/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zefoy/ngx-color-picker.git",
+    "url": "https://github.com/jpcrounse/ngx-color-picker.git",
     "directory": "projects/lib"
   },
   "peerDependencies": {
